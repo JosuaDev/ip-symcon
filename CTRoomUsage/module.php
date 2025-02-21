@@ -54,7 +54,7 @@ class CTRoomUsage extends IPSModule {
     public function ReceiveData($JSONString)
     {
     $data = json_decode($JSONString, true);
-
+        
     // Überprüfen, ob die empfangenen Daten leer sind
     if (empty($data['Buffer'])) {
         // Wenn ja, gespeicherte Buchungen zurücksetzen
